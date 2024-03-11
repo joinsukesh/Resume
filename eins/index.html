@@ -138,16 +138,24 @@
             color: black;
             font-size: 12px;
         }
+
+        @media only screen and (max-width: 480px) {
+            .resume-content-container {
+                transform: rotateZ(0deg);                
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-10">
+            <div class="col-10" style="width:80%;">
                 <div class="resume-container">
                     <div class="resume-content-container">
                         <div class="row">
-                            <div class="col-6 content-left-container text-end">
+                            <div class="col-sm-12 col-md-6 content-left-container text-end">
                                 <div class="row">
                                     <div class="section">
                                         <span class="name">SUKESH</span>
@@ -183,7 +191,7 @@
                                 </div>
 
                             </div>
-                            <div class="col-6 content-right-container text-start">
+                            <div class="col-sm-12 col-md-6 content-right-container text-start">
 
                                 <div class="row">
                                     <div class="section">
