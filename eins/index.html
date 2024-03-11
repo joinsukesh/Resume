@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sukesh - Resume</title>
+    <link href="./assets/bootstrap-5.3.2.min.css" rel="stylesheet" />
+    <link href="./assets/bootstrap-icons-1.11.3.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f1f1f1;
+            background-color: darkslategray;
+        }
+
+        .resume-container:before {
+            position: absolute;
+            content: '';
+            top: -3px;
+            left: 0;
+            height: 10px;
+            width: 99%;
+            background-size: 9px 12px;
+            background-image: -webkit-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+            background-image: -moz-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+            background-image: -ms-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+            background-image: -o-radial-gradient(5% 40%, circle, transparent 70%, #555 20%);
+            background-image: radial-gradient(circle at 5% 40%, transparent 70%, #555 20%);
+        }
+
+        .resume-container {
+            margin: 60px 0px;
+            background-color: dodgerblue;
+            background-image: url(data:image/png;base64,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);
+            padding-bottom: 12%;
+            position: relative;
+            box-shadow: -8px -5px 12px -5px black !important;
+            box-shadow: -8px 8px 12px -5px black !important;
+        }
+
+        .resume-content-container {
+            transform: rotateZ(-20deg);
+            margin-top: 50px;
+        }
+
+        .content-left-container, .content-right-container {
+            padding: 0px;
+        }
+
+        .content-left-container {
+            padding-right: 6px;
+            margin-top: 22.9%;
+            position: relative;
+        }
+
+        .content-right-container {
+            padding-left: 6px;
+            margin-top: 12.2%;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-heading {
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin-bottom: 2px;
+        }
+
+        .section-description {
+            text-transform: uppercase;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 22px;
+            color: darkslategray;
+        }
+
+        .sub-heading {
+            color: yellow;
+            opacity: 0.8;
+        }
+
+        .name {
+            display: block;
+            text-transform: uppercase;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 80px;
+            margin-bottom: -30px;
+        }
+
+        .skills {
+            display: block;
+            text-transform: uppercase;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: lightgray;
+            letter-spacing: 1px;
+        }
+
+        .role {
+            color: rgba(0,0,0,0.7);
+            font-size: 18px;
+        }
+
+        .company {
+            font-size: 16px;
+        }
+
+        .contact-section {
+            margin-top: 10%;
+            /*position: absolute;
+            left: 1%;
+            bottom: -0.3%;*/
+        }
+
+        .contact-info {
+            font-size: 16px;
+            color: lightgray;
+        }
+
+        i.bi {
+            color: black;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="resume-container">
+                    <div class="resume-content-container">
+                        <div class="row">
+                            <div class="col-6 content-left-container text-end">
+                                <div class="row">
+                                    <div class="section">
+                                        <span class="name">SUKESH</span>
+                                        <span class="skills">&nbsp;Web Developer. Scrum Master.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="section">
+                                        <span class="section-heading">About</span>
+                                        <div class="section-description">
+                                            Passionate coder and aspiring Scrum Master,<br />crafting seamless web experiences
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="section">
+                                        <span class="section-heading">Education</span>
+                                        <div class="section-description">
+                                            B.E. Mech. (2006)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="section contact-section">
+                                        <div class="section-description">
+                                            <p class="contact-info">
+                                                961-871-3809&nbsp;<i class="bi bi-telephone-fill"></i><br />
+                                                joinsukesh@yahoo.com&nbsp;<i class="bi bi-envelope-at-fill"></i><br />
+                                                <a href="https://github.com/joinsukesh" target="_blank" style="text-decoration:none; color:inherit;">/joinsukesh</a> &nbsp;<i class="bi bi-github"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-6 content-right-container text-start">
+
+                                <div class="row">
+                                    <div class="section">
+                                        <span class="section-heading">Work</span>
+                                        <div class="section-description">
+                                            <p>
+                                                <span class="sub-heading">July 2014 - Present</span><br />
+                                                <span class="role">Sr. Software Associate</span><br />
+                                                <span class="company">PennyWise Solutions, Hyderabad, India</span>
+                                            </p>
+                                            <p>
+                                                <span class="sub-heading">Dec 2012 - May 2014</span><br />
+                                                <span class="role">Software Engineer</span><br />
+                                                <span class="company">e-Business Applications, Dubai</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:0.9%">
+                                    <div class="section">
+                                        <span class="section-heading">Competencies</span>
+                                        <div class="section-description">
+                                            <p>
+                                                <span class="sub-heading">Backend</span>&nbsp;&nbsp;Sitecore XP, .NET MVC<br />
+                                                <span class="sub-heading">Frontend</span>&nbsp;&nbsp;HTML, CSS<br />
+                                                <span class="sub-heading">Database</span>&nbsp;&nbsp;SQL
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top:1%">
+                                    <div class="section">
+                                        <span class="section-heading">Certifications</span>
+                                        <div class="section-description">
+                                            <p>
+                                                <span class="sub-heading">Product Development</span>&nbsp;&nbsp;PSM I<br />
+                                                <span class="sub-heading">Technology</span>&nbsp;&nbsp;Sitecore XP Developer (8, 10)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Design inspirations: https://www.behance.net/gallery/27471475/my-personal-cv https://gist.github.com/seif1000/d2162ba6c4bf78cf82238ad053855653 -->
+</body>
+</html>
